@@ -20,8 +20,12 @@ const images = [
   // ciclo for + template literal
 for(let i = 0; i < images.length; i++){
   imagesTags += `
-    <img src="img/${images[i]}" alt="">
+    <img src="img/${images[i]}" alt="${images[i]}">
   `
 }
+
+document.querySelector('imagesTags').classList.add('hide');
+
+document.querySelector('img:nth-child(' + i + ')').classList.add('hide')
 
 slider.innerHTML = imagesTags;
